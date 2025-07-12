@@ -9,15 +9,14 @@ const App = () => {
   // TODO: Implement logic to filter products based on availability
 
   return (
-    <div>
-      <h1>{/* TODO: Add 'Product Dashboard' title here */}</h1>
-      
-      {/* TODO: Add buttons to allow filtering by availability */}
-
-      {/* TODO: Render the ProductList component and pass filtered products */}
-      
+    <div className="App">
+      <h1>Product List</h1>
+      <ProductList />
     </div>
   );
 };
 
 export default App;
+{/* TODO: Add buttons to allow filtering by availability */}
+
+      {/* TODO: Render the ProductList component and pass filtered products */}
