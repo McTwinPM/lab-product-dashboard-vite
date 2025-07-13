@@ -4,9 +4,9 @@ import ProductList from './components/ProductList';
 const App = () => {
   // TODO: Define initial product data
   const [products, setProducts] = useState([
-    { id: 1, name: 'Product 1', price: 29.99, inStock: true },
-    { id: 2, name: 'Product 2', price: 19.99, inStock: false },
-    { id: 3, name: 'Product 3', price: 39.99, inStock: true },
+    { id: 1, name: 'Laptop', price: 999, inStock: true },
+    { id: 2, name: 'Phone', price: 699, inStock: false },
+    { id: 3, name: 'Tablet', price: 499, inStock: true },
     // Add more products as needed
   ]);
   // TODO: Implement state to manage filtering
