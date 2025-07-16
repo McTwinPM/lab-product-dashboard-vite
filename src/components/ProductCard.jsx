@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from '../styles/ProductCard.module.css';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onRemove }) => {
   return (
     
-    <div className>
+    <div className={`${styles.productCard} ${!product.inStock ? styles.outOfStockClass : ''}`}>
+
       {/* TODO: Apply conditional class to <div> above for out-of-stock items */}
-      {/* className={styles.productCard} */}
-      {/* <img src={product.image} alt={product.name} className={styles.productImage} /> */}
       {/* TODO: Display product name */}
       <h2 className={styles.productName}>{product.name}</h2>
 
@@ -17,9 +16,10 @@ const ProductCard = ({ product }) => {
       {/* TODO: Show if the product is in stock or out of stock */}
       <p className={styles.productAvailability}>
         {product.inStock ? 'In Stock' : 'Out of Stock'}
+        
       </p>
-
-      
+      <button className={styles.removeButton}
+      onClick={() => onRemove(product.id)}>Remove Product</button>
     </div>
   );
 };
